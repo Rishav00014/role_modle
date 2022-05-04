@@ -4,18 +4,24 @@
     padding:0;
 }
 header {
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://www.tcs.com/content/dam/tcs/images/components-homepage/2022/skydiving-web.png');
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("/img/tcs-bg.png");
     height:100vh;
     background-size: cover;
     background-position:center;
 }
+header img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 20px;
+}
 .nav-menu {
     float: right;
-    list-style:none;
     margin-top: 30px;
+    display: flex;
 }
 .nav-menu li{
-    display: inline-block;
+    list-style: none;
 }
 .nav-menu li a{
     color:turquoise;
@@ -23,10 +29,6 @@ header {
     padding:5px 20px;
     font-family: "verdana","sans-serif";
     font-size:20px;
-}
-.homebtn a:hover{
-    border:1px solid grey;
-    background-color:white;
 }
 .nav-menu li a:hover{
     border:1px solid grey;
@@ -45,12 +47,12 @@ h1{
     text-align:left;
     margin-top:200px;
 }
-h{
+h2{
    color:white;
    font-size:30px;
    font-family: "Arial","Helvetica";
    text-align:left;
-   margin-top:200px;
+   margin-top:50px;
 }
 .tap{
     margin-top:30px;

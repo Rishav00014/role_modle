@@ -1,10 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,600&display=swap');
+@font-face {
+    font-family: 'JosefinSans';
+    src: url('/fonts/JosefinSans-VariableFont_wght.ttf');
+}
 
 :root {
-    --main-bg-color: black;
-    --main-text-color: white;
+    --main-bg-color: #4DBD8F;
+    --main-text-color: #1C1C1C;
     --slider-text-color: lightgray;
-    --link-color: gray;
+    --link-color: #3E5C50;
+    --page-bg-color: #DDE7ED  ;
+    --data-bg :white;
     --h-hight: 15vh;
     --f-hight: 12vh;
 }
@@ -27,7 +32,9 @@ nav {
     height: var(--h-hight);
 
     background-color: var(--main-bg-color);
-    font-family: 'Playfair Display', serif;
+    font-family: 'JosefinSans', serif;
+    font-weight: 700;
+    font-style: italic;
 }
 
 nav img {
@@ -44,7 +51,7 @@ nav ul {
 }
 
 nav ul li {
-    font-size: 3vh;
+    font-size: 25px;
     list-style: none;
     padding-right: 30px;
 }
@@ -57,7 +64,7 @@ nav ul li a {
 nav ul li a:hover {
     font-weight: bold;
     color:var(--slider-text-color);
-    font-size: 3.5vh;
+    font-size: 30px;
 }
 
 main {
@@ -65,7 +72,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: darkgrey;
+    background-color: var(--page-bg-color);
 }
 
 /* Slideshow container */
@@ -95,7 +102,7 @@ main {
     cursor: pointer;
     top: 45%;
     width: auto;
-    color: var(--slider-text-color);
+    color: white;
     font-weight: bold;
     font-size: 50px;
     transition: 0.6s ease;
@@ -112,7 +119,7 @@ main {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--slider-text-color);
 }
 
 /* Number text (1/5 etc) */
@@ -165,7 +172,7 @@ main {
     flex-direction: row;
 }
 .detail{
-    background-color: var(--main-bg-color);
+    background-color: var(--data-bg);
     color: var(--main-text-color);
     width: 65vw;
     margin: 20px;
@@ -181,7 +188,7 @@ main {
     text-align: center;
 }
 .list{
-    background-color: var(--main-bg-color);
+    background-color: var(--data-bg);
     color: var(--main-text-color);
     position: sticky;
     top: calc(var(--h-hight) + 1vh);
@@ -241,7 +248,7 @@ footer {
 /*About page*/
 .data-3{
     width: 90vw;
-    background-color: var(--main-bg-color);
+    background-color: var(--data-bg);
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
@@ -254,7 +261,8 @@ footer {
 .heading{
     padding: 20px;
     color: var(--main-text-color);
-    font-size: 25px;
+    font-size: 30px;
+    font-weight: bold;
     color: var(--link-color);
 }
 /*page tributes*/
@@ -264,7 +272,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    background-color: var(--main-bg-color);
+    background-color: var(--data-bg);
 
     width: 80vw;
     height: 40vh;
@@ -295,7 +303,7 @@ footer {
 .product{
     margin: 20px;
     width: 90vw;
-    background-color: var(--main-bg-color);
+    background-color: var(--data-bg);
     border-radius: 10px;
 }
 .title{
