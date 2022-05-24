@@ -245,6 +245,15 @@ footer {
     color: var(--slider-text-color);
     font-size: 1.2rem;
 }
+.creator{
+    position: relative;
+    background-color: var(--page-bg-color);
+    color: var(--link-color);
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 0px;
+    bottom: 0px;
+}
 /*About page*/
 .data-3{
     width: 90vw;
@@ -293,7 +302,7 @@ footer {
     text-align: justify;
     font-size: 18px;
 }
-.data-2 p{
+.date{
     text-align: left;
     font-weight:bolder;
     margin: 10px;
